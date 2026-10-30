@@ -2,18 +2,57 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#0b1020"><meta name="description" content="CarExit — إدارة تخارج السيارات ومحاكاة تسوية الأقساط">
+<meta name="theme-color" content="#080d18"><meta name="description" content="CarExit — سوق للتخارج من عقود السيارات، واكتشاف العقود المناسبة، وحساب الموقف المالي بوضوح.">
 <link rel="manifest" href="./manifest.webmanifest"><link rel="stylesheet" href="./styles.css">
-<title>CarExit | إدارة تخارج السيارات</title>
+<title>CarExit | سوق التخارج من عقود السيارات</title>
 </head>
 <body>
 <div class="shell">
-<header class="topbar"><a class="brand" href="#"><span class="brand-mark">C</span><span>CAR<span class="gold">EXIT</span><small>VEHICLE EXIT MANAGEMENT</small></span></a><div class="top-actions"><span class="live-dot">مساحة عمل محلية</span><button id="langBtn" class="ghost">EN</button></div></header>
+<header class="topbar">
+<a class="brand" href="#"><span class="brand-mark">C</span><span>CAR<span class="gold">EXIT</span><small>SMART VEHICLE EXIT MARKET</small></span></a>
+<nav class="main-nav" aria-label="التنقل الرئيسي"><a href="#market">استكشف العقود</a><a href="#how">كيف تعمل؟</a><a href="#calculator">حاسبة التخارج</a></nav>
+<div class="top-actions"><span class="live-dot">منصة التخارج الذكي</span><button id="langBtn" class="ghost" type="button">EN</button></div>
+</header>
 <main>
-<section class="hero"><div><p class="eyebrow">SMART VEHICLE SETTLEMENT</p><h1>قرارات تخارج،<br><em>بحسابات أوضح.</em></h1><p class="sub">أدر بيانات السيارة والتقسيط، واختبر سيناريوهات التخارج والتسوية في مكان واحد.</p></div><div class="hero-seal"><span>CE</span><small>PRIVATE<br>WORKSPACE</small></div></section>
-<section class="stats" aria-label="ملخص"><article class="stat"><span>إجمالي السيارات</span><strong id="totalCars">0</strong><small>سجل محفوظ على هذا الجهاز</small></article><article class="stat"><span>إجمالي المتبقي</span><strong id="totalRemaining">0 ج.م</strong><small>حسب بيانات السجلات</small></article><article class="stat"><span>متوسط نسبة السداد</span><strong id="avgPaid">0%</strong><small>للسجلات المسجلة</small></article></section>
+<section class="hero landing-hero">
+<div class="hero-copy">
+<p class="eyebrow">THE SMART WAY TO EXIT YOUR CAR CONTRACT</p>
+<h1>عقد سيارتك له<br><em>فرصة جديدة.</em></h1>
+<p class="sub">CarExit تجمع بين من يريد التخارج من عقد سيارته، ومن يبحث عن فرصة مناسبة لاستلام عقد. ابدأ بخطوة واضحة، وافهم حساباتك قبل اتخاذ القرار.</p>
+<div class="hero-actions">
+<a class="primary action-link" href="#calculator">احسب موقف عقدك <span>↗</span></a>
+<a class="secondary action-link" href="#market">ابحث عن عقد سيارة</a>
+</div>
+<div class="hero-points"><span>قرارات مالية أوضح</span><span>فرص تخارج في مكان واحد</span><span>خصوصية بياناتك</span></div>
+</div>
+<div class="hero-art" aria-label="CarExit منصة التخارج من عقود السيارات">
+<div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+<div class="art-label">CAR<span>EXIT</span><small>YOUR NEXT MOVE</small></div>
+<div class="car-symbol">✦</div>
+<div class="art-bottom"><span>01</span><span>SMART EXIT PLATFORM</span></div>
+</div>
+</section>
+<section class="entry-grid" aria-label="ابدأ من هنا">
+<a class="entry-card" href="#calculator"><span class="entry-icon">⌁</span><span class="entry-copy"><b>أريد التخارج من عقدي</b><small>احسب المتبقي وصافي التخارج التقديري، واستعد لعرض عقدك.</small></span><span class="entry-arrow">↗</span></a>
+<a class="entry-card" href="#market"><span class="entry-icon">⌕</span><span class="entry-copy"><b>أبحث عن عقد سيارة</b><small>اكتشف فكرة سوق العقود واستعد لاستعراض الفرص المتاحة.</small></span><span class="entry-arrow">↗</span></a>
+</section>
+<section class="section-block" id="market">
+<div class="section-heading"><div><p class="eyebrow">EXPLORE OPPORTUNITIES</p><h2>اكتشف فرص التخارج</h2><p>مكان واحد يجمع أصحاب العقود والباحثين عن فرصة مناسبة.</p></div><span class="section-index">01 / MARKETPLACE</span></div>
+<div class="market-empty"><div class="market-symbol">◇</div><div><b>سوق العقود قيد التجهيز</b><p>سيتم عرض العقود المنشورة هنا بعد تفعيل حسابات المستخدمين ونظام مراجعة العروض. لا توجد عروض تجريبية أو بيانات وهمية.</p></div></div>
+</section>
+<section class="section-block how-block" id="how">
+<div class="section-heading"><div><p class="eyebrow">SIMPLE & CLEAR</p><h2>كيف تعمل CarExit؟</h2><p>ثلاث خطوات لفهم الفرصة واتخاذ قرارك.</p></div><span class="section-index">02 / HOW IT WORKS</span></div>
+<div class="steps-grid">
+<article class="step-card"><span>01</span><b>اعرف موقف عقدك</b><p>أدخل بيانات السيارة والأقساط للحصول على تقدير مالي مبدئي.</p></article>
+<article class="step-card"><span>02</span><b>اعرض أو استكشف</b><p>صاحب العقد يجهز عرضه، والباحث يستكشف العقود المناسبة.</p></article>
+<article class="step-card"><span>03</span><b>راجع شروط النقل</b><p>تواصل واتفق بعد التحقق من شروط الجهة الممولة وموافقتها على نقل العقد.</p></article>
+</div>
+</section>
+<section class="calculator-section" id="calculator">
+<div class="section-heading"><div><p class="eyebrow">EXIT CALCULATOR</p><h2>حاسبة التخارج</h2><p>ابدأ بتقدير موقف عقدك المالي قبل اتخاذ أي خطوة.</p></div><span class="section-index">03 / YOUR NUMBERS</span></div>
+<div class="stats" aria-label="ملخص الملفات"><article class="stat"><span>إجمالي السيارات</span><strong id="totalCars">0</strong><small>سجل محفوظ على هذا الجهاز</small></article><article class="stat"><span>إجمالي المتبقي</span><strong id="totalRemaining">0 ج.م</strong><small>حسب بيانات السجلات</small></article><article class="stat"><span>متوسط نسبة السداد</span><strong id="avgPaid">0%</strong><small>للسجلات المسجلة</small></article></div>
 <div class="workspace">
-<section class="panel form-panel"><div class="panel-head"><div><p class="eyebrow">NEW VEHICLE FILE</p><h2>ملف سيارة جديد</h2></div><span class="step">01 / 02</span></div>
+<section class="panel form-panel"><div class="panel-head"><div><p class="eyebrow">NEW VEHICLE FILE</p><h2>بيانات عقد السيارة</h2></div><span class="step">01 / 02</span></div>
 <form id="carForm">
 <div class="field-grid"><label>اسم السيارة / الموديل<input name="vehicle" required placeholder="مثال: Mercedes C180 2022"></label><label>رقم الملف أو مرجع العقد<input name="reference" placeholder="اختياري"></label>
 <label>قيمة السيارة / العقد (ج.م)<input name="price" type="number" min="0" step="0.01" required placeholder="0"></label><label>المقدم المدفوع (ج.م)<input name="down" type="number" min="0" step="0.01" value="0" required></label>
@@ -23,7 +62,10 @@
 <div class="calc-preview" id="preview"><div><span>إجمالي المدفوع التقديري</span><b id="pPaid">—</b></div><div><span>الأقساط المتبقية</span><b id="pCount">—</b></div><div><span>الرصيد المتبقي التقديري</span><b id="pRemaining">—</b></div><div class="net"><span>صافي التخارج التقديري</span><b id="pNet">—</b></div></div>
 <div class="form-actions"><button class="primary" type="submit">حفظ الملف وحساب التسوية <span>↗</span></button><button class="ghost" type="reset" id="resetBtn">مسح الحقول</button></div></form></section>
 <aside class="panel side-panel"><p class="eyebrow">SETTLEMENT LOGIC</p><h2>كيف نحسبها؟</h2><ol class="logic"><li><b>المدفوع</b><span>المقدم + الأقساط المسددة.</span></li><li><b>المتبقي</b><span>الأقساط المتبقية × قيمة القسط.</span></li><li><b>صافي التخارج</b><span>قيمة التخارج − المتبقي − الرسوم + الخصم.</span></li></ol><div class="notice"><span>ⓘ</span><p>هذه محاكاة حسابية مبسطة. قد تختلف التسوية الفعلية بسبب الفوائد أو غرامات السداد المبكر أو شروط العقد.</p></div></aside></div>
-<section class="panel records"><div class="panel-head"><div><p class="eyebrow">YOUR PORTFOLIO</p><h2>ملفات السيارات</h2></div><span class="record-count" id="recordCount">0 ملفات</span></div><div id="recordsList" class="records-list"><div class="empty"><span>◇</span><b>لا توجد ملفات بعد</b><p>أضف أول سيارة لبدء متابعة الأقساط ومحاكاة التخارج.</p></div></div></section>
-</main><footer><span>CAR<span class="gold">EXIT</span> PLATFORM</span><span>Built for clarity · Estimates only</span></footer>
+<section class="panel records"><div class="panel-head"><div><p class="eyebrow">YOUR PORTFOLIO</p><h2>ملفات السيارات المحفوظة</h2></div><span class="record-count" id="recordCount">0 ملفات</span></div><div id="recordsList" class="records-list"><div class="empty"><span>◇</span><b>لا توجد ملفات بعد</b><p>أضف أول سيارة لبدء متابعة الأقساط ومحاكاة التخارج.</p></div></div></section>
+<p class="legal-note">CarExit أداة تقدير ومكان لاستكشاف فرص التخارج. أي نقل للعقد يظل خاضعاً لشروط وموافقة الجهة الممولة أو المالكة، والنتائج الحسابية تقديرية وليست تسوية ملزمة.</p>
+</section>
+</main>
+<footer><span>CAR<span class="gold">EXIT</span> PLATFORM</span><span>Built for clarity · Estimates only</span></footer>
 </div><script src="./app.js"></script>
 </body></html>
