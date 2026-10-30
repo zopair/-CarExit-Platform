@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1020"><meta name="description" content="CarExit — إدارة تخارج السيارات ومحاكاة تسوية الأقساط">
+<link rel="manifest" href="./manifest.webmanifest"><link rel="stylesheet" href="./styles.css">
+<title>CarExit | إدارة تخارج السيارات</title>
+</head>
+<body>
+<div class="shell">
+<header class="topbar"><a class="brand" href="#"><span class="brand-mark">C</span><span>CAR<span class="gold">EXIT</span><small>VEHICLE EXIT MANAGEMENT</small></span></a><div class="top-actions"><span class="live-dot">مساحة عمل محلية</span><button id="langBtn" class="ghost">EN</button></div></header>
+<main>
+<section class="hero"><div><p class="eyebrow">SMART VEHICLE SETTLEMENT</p><h1>قرارات تخارج،<br><em>بحسابات أوضح.</em></h1><p class="sub">أدر بيانات السيارة والتقسيط، واختبر سيناريوهات التخارج والتسوية في مكان واحد.</p></div><div class="hero-seal"><span>CE</span><small>PRIVATE<br>WORKSPACE</small></div></section>
+<section class="stats" aria-label="ملخص"><article class="stat"><span>إجمالي السيارات</span><strong id="totalCars">0</strong><small>سجل محفوظ على هذا الجهاز</small></article><article class="stat"><span>إجمالي المتبقي</span><strong id="totalRemaining">0 ج.م</strong><small>حسب بيانات السجلات</small></article><article class="stat"><span>متوسط نسبة السداد</span><strong id="avgPaid">0%</strong><small>للسجلات المسجلة</small></article></section>
+<div class="workspace">
+<section class="panel form-panel"><div class="panel-head"><div><p class="eyebrow">NEW VEHICLE FILE</p><h2>ملف سيارة جديد</h2></div><span class="step">01 / 02</span></div>
+<form id="carForm">
+<div class="field-grid"><label>اسم السيارة / الموديل<input name="vehicle" required placeholder="مثال: Mercedes C180 2022"></label><label>رقم الملف أو مرجع العقد<input name="reference" placeholder="اختياري"></label>
+<label>قيمة السيارة / العقد (ج.م)<input name="price" type="number" min="0" step="0.01" required placeholder="0"></label><label>المقدم المدفوع (ج.م)<input name="down" type="number" min="0" step="0.01" value="0" required></label>
+<label>عدد الأقساط الكلي<input name="installments" type="number" min="1" step="1" required placeholder="مثال: 60"></label><label>قيمة القسط الشهري (ج.م)<input name="monthly" type="number" min="0" step="0.01" required placeholder="0"></label>
+<label>عدد الأقساط المسددة<input name="paidCount" type="number" min="0" step="1" value="0" required></label><label>قيمة التخارج المتفق عليها مبدئياً (ج.م)<input name="exitValue" type="number" min="0" step="0.01" placeholder="اتركه فارغاً لاستخدام القيمة المتبقية"></label>
+<label>رسوم التخارج (ج.م)<input name="fees" type="number" min="0" step="0.01" value="0"></label><label>خصم / تسوية إضافية (ج.م)<input name="discount" type="number" min="0" step="0.01" value="0"></label></div>
+<div class="calc-preview" id="preview"><div><span>إجمالي المدفوع التقديري</span><b id="pPaid">—</b></div><div><span>الأقساط المتبقية</span><b id="pCount">—</b></div><div><span>الرصيد المتبقي التقديري</span><b id="pRemaining">—</b></div><div class="net"><span>صافي التخارج التقديري</span><b id="pNet">—</b></div></div>
+<div class="form-actions"><button class="primary" type="submit">حفظ الملف وحساب التسوية <span>↗</span></button><button class="ghost" type="reset" id="resetBtn">مسح الحقول</button></div></form></section>
+<aside class="panel side-panel"><p class="eyebrow">SETTLEMENT LOGIC</p><h2>كيف نحسبها؟</h2><ol class="logic"><li><b>المدفوع</b><span>المقدم + الأقساط المسددة.</span></li><li><b>المتبقي</b><span>الأقساط المتبقية × قيمة القسط.</span></li><li><b>صافي التخارج</b><span>قيمة التخارج − المتبقي − الرسوم + الخصم.</span></li></ol><div class="notice"><span>ⓘ</span><p>هذه محاكاة حسابية مبسطة. قد تختلف التسوية الفعلية بسبب الفوائد أو غرامات السداد المبكر أو شروط العقد.</p></div></aside></div>
+<section class="panel records"><div class="panel-head"><div><p class="eyebrow">YOUR PORTFOLIO</p><h2>ملفات السيارات</h2></div><span class="record-count" id="recordCount">0 ملفات</span></div><div id="recordsList" class="records-list"><div class="empty"><span>◇</span><b>لا توجد ملفات بعد</b><p>أضف أول سيارة لبدء متابعة الأقساط ومحاكاة التخارج.</p></div></div></section>
+</main><footer><span>CAR<span class="gold">EXIT</span> PLATFORM</span><span>Built for clarity · Estimates only</span></footer>
+</div><script src="./app.js"></script>
+</body></html>
