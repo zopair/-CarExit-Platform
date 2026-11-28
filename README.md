@@ -68,3 +68,20 @@ No automated unit/browser test suite was present in the reviewed tree. The Pages
 Project authorship and attribution: **Aly Hussein Zopair (علي حسين زبير ALY HUSSEIN ZOPAIR)**.
 
 This attribution does not create a software license or make the financial calculations legal, accounting, lending, or investment advice.
+
+## Architecture
+
+```mermaid
+flowchart TD
+  U[User] --> UI[Static browser application]
+  UI --> C[Contract and vehicle calculations]
+  UI --> L[Local record management]
+  C --> V[Illustrative settlement estimate]
+  L --> S[(Browser LocalStorage)]
+```
+
+The current architecture is browser-only. It has no server-side account, database, synchronization, lender integration, or legally certified settlement process.
+
+## Change log
+
+- 2026-11-28 — Added architecture documentation and clarified the boundary between browser calculations and verified financial/legal settlement.
